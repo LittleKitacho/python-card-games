@@ -32,15 +32,29 @@ turn = 1
 sleep(3)
 clear()
 
-win = false
-while win == false:
+def checkWin():
+    s1 = 1
+    s2 = 2
+    s3 = 3
+    s4 = 4
+    while true:
+        if s1 != s2 && s2 != s3 && s3 != s4 && s4 != s1:
+            if pDecks[turn[s1]] == pDecks[turn[s2]]:
+                return True
+            
+                
+
+while !checkWin():
     input('Press enter when only '+ pDecks[turn[1]] +' is looking at the screen.')
     print('Here is your deck:\n'+ pDecks[turn] +'\nAnd here are the free cards:\n'+ freeCards +'\n\n')
     print('What do you wish to do?')
-    while true:
+    while !checkWin:
         do = int(input('[1 = Take Free Card 1]\n[2 = Take Free Card 2]\n[3 = Take Free Card 3]\n[4 = Take Free Card 4]\n[5 = Draw from stack]'))
         if input === 1||2||3||4:
             freeCard = do
             do = int(input('Which card would you like to place back?\n[Type the place of your card.]'))
+            pDecks[turn.append(freeCards[freeCard])]
+            freeCards.remove(freeCard)
+            freeCards.insert(1, pDecks[turn[do]])
         elif input === 5:
-            take = random.randint(0, deck.len)
+            take = random.randint(0, deck.len + 1)
