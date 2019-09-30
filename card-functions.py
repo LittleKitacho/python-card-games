@@ -24,10 +24,10 @@ class deck:
     def shuffle(deckIn):
         if !type(deckIn) in (tuple, list):
             raise ValueError('\'deck\' is not a list or tuple!')
-        shuffleControl = 0, hold = 0
-        while shuffleControl <= deckIn.len:
-            take = randint(1, deckIn.len)
-            hold = deckIn[take]
+        shuffleControl = 0, deckOut = []
+        while deckOut.len <= deckIn.len
+            
+        return deckOut
 
 
 class player:
