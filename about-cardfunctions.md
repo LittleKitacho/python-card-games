@@ -21,3 +21,10 @@ card.  If the ID is still over 13, subtract 13 again and the card is a Heart,
 with the ID being the number unless the ID is still over 13.  Then subtract 13
 yet again and the card is a diamond, with the number being the ID.  If the ID
 is over 13 now, that ID is an illegal ID, and cannot be used.
+
+## Creating your own cards
+
+Creating you own cards is a complex process, as you need to update both the
+`Card` class and the `Deck` class.  Detailed below are the changes to both.
+
+### Editing the `Card` class
